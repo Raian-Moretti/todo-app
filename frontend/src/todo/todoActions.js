@@ -1,7 +1,7 @@
 // ONLY REQUIRED TO USE REDUX
 import axios from 'axios';
 
-const URL = 'http://localhost:3001/api/todos'; 
+const URL = '/api/todos'; 
 
 export const changeDescription = (event) => ({
     type: 'DESCRIPTION_CHANGED',

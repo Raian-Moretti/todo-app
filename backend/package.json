@@ -5,7 +5,7 @@
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start src/loader.js --name todo-app"
+    "start": "pm2 start src/config/loader.js --name todo-app --no-daemon"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,8 @@
   "dependencies": {
     "body-parser": "1.15.2",
     "express": "4.14.0",
-    "mongoose": "4.7.0",
+    "mongodb": "^3.5.5",
+    "mongoose": "5.8.9",
     "node-restful": "0.2.5",
     "pm2": "^4.2.3"
   },
